@@ -65,8 +65,8 @@
     </div>
     <script>
       /* EXERCISE 1
-     Write a function for changing the title of the document in something else.
-    */
+       Write a function for changing the title of the document in something else.
+      */
 
       const changeTitle = function (newTitle) {
         const h1 = document.querySelector("h1");
@@ -74,8 +74,8 @@
       };
 
       /* EXERCISE 2
-     Write a function for changing the class of the title of the page in "myHeading".
-    */
+       Write a function for changing the class of the title of the page in "myHeading".
+      */
 
       const addClassToTitle = function () {
         const h1 = document.querySelector("h1");
@@ -83,8 +83,8 @@
       };
 
       /* EXERCISE 3
-     Write a function for changing the text of only the p which are children of a div.
-    */
+       Write a function for changing the text of only the p which are children of a div.
+      */
 
       const changePcontent = function () {
         const pTags = document.querySelectorAll("p");
@@ -95,8 +95,8 @@
       };
 
       /* EXERCISE 4
-     Write a function for changing the href property of every link to https://www.google.com
-    */
+       Write a function for changing the href property of every link to https://www.google.com
+      */
 
       const changeUrls = function () {
         const aTags = document.querySelectorAll("a");
@@ -106,8 +106,8 @@
       };
 
       /* EXERCISE 5
-     Write a function for adding a new list item in the second unordered list.
-    */
+       Write a function for adding a new list item in the second unordered list.
+      */
 
       const addToTheSecond = function (content) {
         const secondList = document.getElementById("secondList");
@@ -117,8 +117,8 @@
       };
 
       /* EXERCISE 6
-     Write a function for adding a second paragraph to the first div.
-    */
+       Write a function for adding a second paragraph to the first div.
+      */
 
       const addParagraph = function (content) {
         const mainDiv = document.getElementsByTagName("div")[1];
@@ -129,8 +129,8 @@
       };
 
       /* EXERCISE 7
-     Write a function for making the first unordered list disappear.
-    */
+       Write a function for making the first unordered list disappear.
+      */
 
       const firstUlDisappear = function () {
         // const firstList = document.getElementById("firstList");
@@ -143,8 +143,8 @@
       };
 
       /* EXERCISE 8
-     Write a function for making the background of every unordered list green.
-    */
+       Write a function for making the background of every unordered list green.
+      */
 
       const paintItGreen = function () {
         // const ulTags = document.getElementsByTagName("ul");
@@ -156,8 +156,8 @@
       };
 
       /* EXERCISE 9
-     Make the heading of the page change color every time the user clicks on it.
-    */
+       Make the heading of the page change color every time the user clicks on it.
+      */
 
       const makeItClickable = function () {
         //added onclick = "makeItClickable()" inside the heading tag
@@ -168,8 +168,8 @@
       };
 
       /* EXERCISE 10
-     Change the footer text with something else when the user clicks on it.
-    */
+       Change the footer text with something else when the user clicks on it.
+      */
 
       const changeFooterText = function () {
         //added onclick= "changeFooterText()" in the p tag in footer
@@ -179,8 +179,8 @@
       };
 
       /* EXERCISE 11
-     Attach an event listener to the input field in the page that changes the text of the page's subtitle
-    */
+       Attach an event listener to the input field in the page that changes the text of the page's subtitle
+      */
 
       const inputField = document.getElementById("input-field");
       // ...
@@ -198,12 +198,16 @@
       };
 
       /* EXERCISE 13
-     Use HTML5 tags to properly provide semantic meaning to the different portions of the page.
-    */
+       Use HTML5 tags to properly provide semantic meaning to the different portions of the page.
+      */
+      const changeTag = function () {
+        const secondH2 = document.querySelectorAll("h2")[1];
+        secondH2.outerHTML = "<h3>" + secondH2.innerHTML + "</h3>";
+      };
 
       /* ### EXTRA ###  EXERCISE 14
-     Create an input of type "color" and use it to change the color of the subtitle
-    */
+       Create an input of type "color" and use it to change the color of the subtitle
+      */
       const changeColorSubtitle = function (event) {
         //added new input with type color inside the body
         const h2 = document.querySelector("h2");
